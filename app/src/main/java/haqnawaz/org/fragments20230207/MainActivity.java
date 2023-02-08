@@ -17,11 +17,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btnTwo=findViewById(R.id.buttonFragmentTwo);
         btnOne = findViewById(R.id.buttonFragmentOne);
+        btnThree=findViewById(R.id.buttonFragmentThree);
         //linearLayout = findViewById(R.id.layoutMainActivity);
         btnOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentOne fragmentOne = new FragmentOne();
+//                FragmentOne fragmentOne = new FragmentOne();
+//                FragmentTransaction transaction =getSupportFragmentManager().beginTransaction();
+//                transaction.replace(R.id.layoutMainActivity, fragmentOne);
+//                transaction.commit();
+                ITAfternoonFragment fragmentOne = new ITAfternoonFragment();
                 FragmentTransaction transaction =getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.layoutMainActivity, fragmentOne);
                 transaction.commit();
@@ -33,6 +38,16 @@ public class MainActivity extends AppCompatActivity {
                 CSMFragment fragment = new CSMFragment();
                 FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.layoutMainActivity,fragment);
+                transaction.commit();
+            }
+        });
+        btnThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CSAfternoonFragment f3=new CSAfternoonFragment();
+                FragmentTwo fragment = new FragmentTwo();
+                FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.layoutMainActivity2,fragment);
                 transaction.commit();
             }
         });

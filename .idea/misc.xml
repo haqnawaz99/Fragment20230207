@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Programming/Fragments20230207/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Programming/Fragments20230207/app/src/main/res/layout/fragment_c_s_afternoon.xml" value="0.5" />
         <entry key="..\:/Programming/Fragments20230207/app/src/main/res/layout/fragment_c_s_m.xml" value="0.27291666666666664" />
         <entry key="..\:/Programming/Fragments20230207/app/src/main/res/layout/fragment_first.xml" value="0.27291666666666664" />
+        <entry key="..\:/Programming/Fragments20230207/app/src/main/res/layout/fragment_i_t_afternoon.xml" value="0.27291666666666664" />
         <entry key="..\:/Programming/Fragments20230207/app/src/main/res/layout/fragment_i_t_morning.xml" value="0.2682291666666667" />
         <entry key="..\:/Programming/Fragments20230207/app/src/main/res/layout/fragment_one.xml" value="0.27291666666666664" />
         <entry key="..\:/Programming/Fragments20230207/app/src/main/res/layout/fragment_three.xml" value="0.12552083333333333" />
