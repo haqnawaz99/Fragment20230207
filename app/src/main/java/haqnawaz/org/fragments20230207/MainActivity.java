@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        btnTwo=findViewById(R.id.buttonFragmentTwo);
         btnOne = findViewById(R.id.buttonFragmentOne);
         //linearLayout = findViewById(R.id.layoutMainActivity);
         btnOne.setOnClickListener(new View.OnClickListener() {
@@ -24,6 +24,16 @@ public class MainActivity extends AppCompatActivity {
                 FragmentOne fragmentOne = new FragmentOne();
                 FragmentTransaction transaction =getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.layoutMainActivity, fragmentOne);
+                transaction.commit();
+
+            }
+        });
+        btnTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CSMFragment fragment = new CSMFragment();
+                FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.layoutMainActivity,fragment);
                 transaction.commit();
             }
         });
